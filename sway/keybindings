@@ -15,6 +15,16 @@ floating_modifier $mod normal
 # Reload sway
 bindsym $mod+Shift+c reload
 
+# Lock sway
+bindsym $mod+L exec swaylock \
+  --inside-color 00000088 --ring-color 444444 \
+  --line-color 00000000 --key-hl-color 285577 \
+  --separator-color 00000000 --text-color ffffff \
+  --inside-clear-color 222222 --ring-clear-color 285577 \
+  --inside-ver-color 222222 --ring-ver-color 285577 \
+  --inside-wrong-color ff0000 --ring-wrong-color ff4444 \
+  --image /home/linusromland/Pictures/wallpaper.jpg
+
 # Exit sway
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
@@ -24,20 +34,12 @@ bindsym $mod+Shift+s exec grim -g "$(slurp)" - | wl-copy
 
 ### Moving around:
 # Move your focus around
-bindsym $mod+$left focus left
-bindsym $mod+$down focus down
-bindsym $mod+$up focus up
-bindsym $mod+$right focus right
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # Move the focused window
-bindsym $mod+Shift+$left move left
-bindsym $mod+Shift+$down move down
-bindsym $mod+Shift+$up move up
-bindsym $mod+Shift+$right move right
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up

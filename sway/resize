@@ -1,12 +1,6 @@
 ### Resizing Containers
 
 mode "resize" {
-    # Resize using home row keys
-    bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
-    bindsym $right resize grow width 10px
-
     # Resize using arrow keys
     bindsym Left resize shrink width 10px
     bindsym Down resize grow height 10px

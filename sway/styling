@@ -1,7 +1,7 @@
 ### Styling
 
-gaps inner 10
-gaps outer 10
+gaps inner 5
+#gaps outer 10
 smart_gaps off
 
 client.focused #61afef #282c34 #ffffff #61afef
