@@ -17,7 +17,7 @@ for file in "$SWAY_DIR"/*; do
     if [[ -f "$file" ]]; then
         filename=$(basename "$file")
 
-        if [[ " ${ASK_FILES[@]} " =~ " $filename " ]] && [ -f "$CONFIG_DIR/$filename" ]]; then
+        if [[ " ${ASK_FILES[@]} " =~ " $filename " ]] && [[ -f "$CONFIG_DIR/$filename" ]]; then
             read -p "Import $filename from system before overwriting? (y/n) " choice
             if [[ "$choice" == "y" ]]; then
                 cp "$CONFIG_DIR/$filename" "$SWAY_DIR/$filename.imported"
