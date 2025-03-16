@@ -3,6 +3,9 @@
 # Load Variables
 include ~/.config/sway/variables
 
+# Load Styling
+include ~/.config/sway/styling
+
 # Load Input Configuration
 include ~/.config/sway/input
 

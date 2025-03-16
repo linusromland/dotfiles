@@ -2,16 +2,16 @@
 
 bar {
     position top
-    status_command while date +"%Y-%m-%d %H:%M:%S"; do sleep 1; done
+    status_command ~/.config/sway/status.sh
     colors {
         background #282c34
         statusline #abb2bf
         separator #4b5263
-        
+
         focused_workspace #282c34 #61afef #ffffff
         active_workspace #282c34 #c678dd #ffffff
         inactive_workspace #282c34 #3e4451 #abb2bf
         urgent_workspace #282c34 #e06c75 #ffffff
     }
-    font pango:monospace 10
+    font pango:JetBrainsMono Nerd Font 12
 }
