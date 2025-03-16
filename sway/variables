@@ -14,4 +14,4 @@ exec_always export GDK_BACKEND=wayland
 set $term tilix
 
 # Application Launcher
-set $menu dmenu_path | wmenu | xargs swaymsg exec --
+set $menu wofi --show drun --style ~/.config/wofi/style.css
