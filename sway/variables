@@ -1,0 +1,17 @@
+### Variables
+
+# Set Mod Key to Super
+set $mod Mod4
+
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Terminal Emulator
+exec_always export GDK_BACKEND=wayland
+set $term tilix
+
+# Application Launcher
+set $menu dmenu_path | wmenu | xargs swaymsg exec --
