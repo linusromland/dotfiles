@@ -1,6 +1,9 @@
-font=Fira Code 12
-background-color=#282c34
+font=Fira Code Bold 14
+background-color=#1e222a
 text-color=#ffffff
-border-color=#61afef
-border-size=2
-default-timeout=5000
+border-color=#ff5555
+border-size=4
+padding=20
+margin=30
+default-timeout=8000
+anchor=top-right
