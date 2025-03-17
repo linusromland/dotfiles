@@ -24,5 +24,8 @@ include ~/.config/sway/resize
 # Load Status Bar Configuration
 include ~/.config/sway/statusbar
 
+# Enable notifications via Mako
+exec mako
+
 # Include Additional Configuration
 include /etc/sway/config.d/*

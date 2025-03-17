@@ -1,0 +1,7 @@
+[global]
+font=Fira Code 12
+background-color=#282c34
+text-color=#ffffff
+border-color=#61afef
+border-size=2
+default-timeout=5000

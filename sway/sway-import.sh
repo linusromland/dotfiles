@@ -4,6 +4,7 @@ SWAY_DIR="$(pwd)"
 CONFIG_DIR="$HOME/.config/sway"
 WAYBAR_DIR="$HOME/.config/waybar"
 WOFI_DIR="$HOME/.config/wofi"
+MAKO_DIR="$HOME/.config/mako"
 ASK_FILES=( "monitors" )
 
 if [ "$EUID" -eq 0 ]; then
@@ -11,7 +12,7 @@ if [ "$EUID" -eq 0 ]; then
     exit 1
 fi
 
-mkdir -p "$CONFIG_DIR" "$WAYBAR_DIR" "$WOFI_DIR"
+mkdir -p "$CONFIG_DIR" "$WAYBAR_DIR" "$WOFI_DIR" "$MAKO_DIR"
 
 for file in "$SWAY_DIR"/*; do
     if [[ -f "$file" ]]; then
@@ -41,6 +42,12 @@ if [[ -d "$SWAY_DIR/wofi" ]]; then
     cp -r "$SWAY_DIR/wofi/." "$WOFI_DIR/"
     echo "wofi config copied to $WOFI_DIR"
 fi
+
+if [[ -d "$SWAY_DIR/mako" ]]; then
+    cp -r "$SWAY_DIR/mako/." "$MAKO_DIR/"
+    echo "mako config copied to $MAKO_DIR"
+fi
+
 
 echo "Sway configuration updated."
 
